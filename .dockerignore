@@ -1,0 +1,7 @@
+/.idea
+/.git
+/.github
+/.gitignore
+/helm
+/Dockerfile
+/README.md
