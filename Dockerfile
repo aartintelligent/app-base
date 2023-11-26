@@ -62,7 +62,7 @@ mkdir -p \
 /var/cache \
 /var/lib \
 /var/www; \
-chmod 755 -R \
+chmod 777 -R \
 /etc/supervisor \
 /etc/ssmtp \
 /var/pid \
