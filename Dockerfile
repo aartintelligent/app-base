@@ -30,7 +30,6 @@ apt-transport-https \
 apt-utils \
 ca-certificates \
 lsb-release \
-systemd \
 supervisor \
 ssmtp \
 screen \
@@ -54,7 +53,6 @@ COPY --chown=rootless:rootless system /
 
 RUN set -eux; \
 mkdir -p \
-/dev \
 /etc/supervisor \
 /etc/ssmtp \
 /var/pid \
@@ -64,8 +62,7 @@ mkdir -p \
 /var/cache \
 /var/lib \
 /var/www; \
-chmod 777 -R \
-/dev \
+chmod 755 -R \
 /etc/supervisor \
 /etc/ssmtp \
 /var/pid \
@@ -76,7 +73,6 @@ chmod 777 -R \
 /var/lib \
 /var/www; \
 chown rootless:rootless \
-/dev \
 /etc/supervisor \
 /etc/ssmtp \
 /var/pid \
