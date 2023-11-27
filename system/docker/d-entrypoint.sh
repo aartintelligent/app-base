@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-if [ "$1" = "supervisord" ]; then
+if [ "$1" = "$API_RUNTIME" ] || [ "$1" = "$API_RUNTIME_CLI" ]; then
 
   while IFS= read -r script; do
 
