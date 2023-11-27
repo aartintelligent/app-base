@@ -6,8 +6,8 @@ ARG GIT_COMMIT
 
 ENV \
 GIT_COMMIT="${GIT_COMMIT}" \
-API_RUNTIME="supervisord" \
-API_RUNTIME_CLI="bash" \
+APP_RUNTIME="supervisord" \
+APP_RUNTIME_CLI="bash" \
 SUPERVISOR_USERNAME="rootless" \
 SUPERVISOR_PASSWORD="nopassword" \
 SUPERVISOR_LOG_LEVEL="error" \
