@@ -11,6 +11,13 @@ docker build . \
 ```
 
 ```shell
+docker run -it --rm \
+--name app-base \
+aartintelligent/app-base:latest \
+lsb_release -d
+```
+
+```shell
 docker run -d \
 --name app-base \
 aartintelligent/app-base:latest
