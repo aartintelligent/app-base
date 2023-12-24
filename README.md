@@ -51,9 +51,5 @@ docker rm app-base
 ```
 
 ```shell
-docker login -u aartintelligent
-```
-
-```shell
 docker push aartintelligent/app-base:latest
 ```
